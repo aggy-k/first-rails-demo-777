@@ -1,0 +1,14 @@
+<h1>This is the 777 contact page</h1>
+
+<h3>Here are the students</h3>
+
+<form action="/contact" method="get">
+  <input type="text" name="query" placeholder="Enter the student's name.." value="<%= params[:query] %>" />
+  <input type="submit" value="Search">
+</form>
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= student %></li>
+  <% end %>
+</ul>

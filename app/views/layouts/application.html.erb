@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstRailsDemo777</title>
+    <title>Our first demo - 777</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <div style="width: 100%; padding: 20px; background-color: rgba(0,0,0,0.1);">
+      <ul>
+        <li> <%= link_to 'Home', root_path %></li>
+        <li> <%= link_to 'About', about_path %></li>
+        <li> <%= link_to 'Contact', contact_path %></li>
+      </ul>
+    </div>
     <%= yield %>
+
+    <div style="width: 100%; padding: 20px; background-color: rgba(0,0,0,0.1);">
+      <p>This is the footer.</p>
+    </div>
   </body>
 </html>
